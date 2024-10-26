@@ -13,10 +13,14 @@ webgazer.showVideoPreview(true);
 // Define calibration points
 const calibrationPoints = [
     { x: 100, y: 100 }, // Top left
+    { x: window.innerWidth / 2, y: 100}, // top center
     { x: window.innerWidth - 100, y: 100 }, // Top right
     { x: 100, y: window.innerHeight - 100 }, // Bottom left
+    { x: window.innerWidth / 2, y:window.innerHeight - 100}, // Bottom center
     { x: window.innerWidth - 100, y: window.innerHeight - 100 }, // Bottom right
+    { x: 100, y: window.innerHeight / 2 }, // Center left
     { x: window.innerWidth / 2, y: window.innerHeight / 2 }, // Center
+    { x: window.innerWidth - 100, y: window.innerHeight / 2 }, // Center right
 ];
 
 let currentPoint = 0;
